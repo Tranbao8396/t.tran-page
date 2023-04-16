@@ -1,0 +1,140 @@
+.section-content {
+  height: 100%;
+
+  .container,
+  .swiper-main {
+    height: 100%;
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .swiper-main {
+    background-color: #ffcfd8;
+    border-radius: 20px;
+
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 150%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+
+      .content-inner {
+        padding: 15px;
+        width: 100%;
+
+        @include media-breakpoint-down(md) {
+          height: 100%;
+
+          .text {
+            font-size: 12px;
+            margin-bottom: 20px !important;
+          }
+
+          .row {
+            height: 100%;
+          }
+        }
+      }
+
+      .title-swiper {
+        font-weight: bold;
+        font-size: 26px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 22px;
+        }
+      }
+
+      .content-scrollable {
+        overflow-y: auto;
+        margin-right: 30px;
+        padding-left: 20px;
+        padding-right: 15px;
+        height: 70vh;
+
+        @include media-breakpoint-down(lg) {
+          margin-right: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+          height: 19vh;
+          padding-left: 0;
+          padding-right: 15px;
+
+          h4 {
+            font-size: 17px;
+          }
+        }
+
+        .exp-content {
+          padding-bottom: 25px;
+
+          @include media-breakpoint-down(md) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .media {
+      padding: 15px 0;
+      align-items: center;
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-left {
+          padding-right: 15px;
+
+          img {
+            max-width: 430px;
+            width: 100%;
+          }
+        }
+      }
+
+      &-body {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        h2 {
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        .lead {
+          font-size: 30px;
+
+          @include media-breakpoint-down(md) {
+            font-size: 22px;
+          }
+        }
+
+        .text-blink {
+          color: #0b5ed7;
+        }
+      }
+    }
+
+    .form-contact {
+      padding-right: 50px;
+      padding-left: 20px;
+      flex: 1 0 auto;
+
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
